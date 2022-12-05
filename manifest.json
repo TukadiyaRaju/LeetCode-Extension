@@ -1,0 +1,18 @@
+{
+  "name": "LeetCode Celebrations",
+  "version": "0.1.0",
+  "description": "This extension plays a cheerful music when anyone's submission gets accepted in LeetCode.",
+  "manifest_version": 2,
+  "icons": {
+    "24": "assets/logo.png"
+  },
+  "background": {
+    "matches": "https://leetcode.com/*",
+    "scripts": ["./background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["assets/Jiyo_Re_Bahubali.mp3"],
+  "permissions": ["tabs", "notifications", "http://*/", "https://*/"]
+}
